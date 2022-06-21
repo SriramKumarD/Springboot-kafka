@@ -1,0 +1,55 @@
+Step1:
+
+Download the apache-kafka and extract that 
+
+
+Step2:
+
+.\zookeeper-server-start.bat C:\C\SriramKumarD\Projects\kafka\kafka\config\zookeeper.properties
+
+
+Step3:
+
+.\kafka-server-start.bat C:\C\SriramKumarD\Projects\kafka\kafka\config\server.properties
+
+
+Kafka server is started at CSCO-W-PF2S50VK.cisco.com:9092
+
+Step4: Create a topic
+
+./kafka-topics.bat --create --topic topic-srird --bootstrap-server CSCO-W-PF2S50VK.cisco.com:9092
+
+
+
+Microsoft Windows [Version 10.0.19042.1706]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\C\SriramKumarD\Projects\kafka\kafka\bin\windows>./kafka-topics.bat --create --topic topic-srird --bootstrap-server CSCO-W-PF2S50VK.cisco.com:9092
+'.' is not recognized as an internal or external command,
+operable program or batch file.
+
+C:\C\SriramKumarD\Projects\kafka\kafka\bin\windows>kafka-topics.bat --create --topic topic-srird --bootstrap-server CSCO-W-PF2S50VK.cisco.com:9092
+Created topic topic-srird.
+
+C:\C\SriramKumarD\Projects\kafka\kafka\bin\windows>kafka-console-producer.bat --topic topic-srird --bootstrap-server CSCO-W-PF2S50VK.cisco.com:9092
+>sriram
+>kumar
+>even
+>Terminate batch job (Y/N)? y
+
+C:\C\SriramKumarD\Projects\kafka\kafka\bin\windows>kafka-console-consumer.bat --topic topic-srird --bootstrap-server CSCO-W-PF2S50VK.cisco.com:9092
+
+
+
+
+C:\C\SriramKumarD\Projects\kafka\kafka\bin\windows>kafka-console-consumer.bat --topic topic-srird --from-beginning --bootstrap-server CSCO-W-PF2S50VK.cisco.com:9092
+sriram
+kumar
+even
+
+
+
+After publishing the message to Topic from Spring boot project. Read the message from kafka topic
+
+kafka-console-consumer.sh --topic srird --from-beginning --bootstrap-server CSCO-W-PF2S50VK.cisco.com:9092
+
