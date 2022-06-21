@@ -53,3 +53,13 @@ After publishing the message to Topic from Spring boot project. Read the message
 
 kafka-console-consumer.sh --topic srird --from-beginning --bootstrap-server CSCO-W-PF2S50VK.cisco.com:9092
 
+
+
+
+
+
+https://kafka.apache.org/quickstart
+
+
+
+
