@@ -42,7 +42,7 @@ C:\C\SriramKumarD\Projects\kafka\kafka\bin\windows>kafka-console-consumer.bat --
 
 
 
-C:\C\SriramKumarD\Projects\kafka\kafka\bin\windows>kafka-console-consumer.bat --topic topic-srird --from-beginning --bootstrap-server CSCO-W-PF2S50VK.cisco.com:9092
+C:\C\SriramKumarD\Projects\kafka\kafka\bin\windows>kafka-console-consumer.bat --topic topic-srird --from-beginning --bootstrap-server 127.0.0.1:9092
 sriram
 kumar
 even
@@ -51,7 +51,7 @@ even
 
 After publishing the message to Topic from Spring boot project. Read the message from kafka topic
 
-kafka-console-consumer.sh --topic srird --from-beginning --bootstrap-server CSCO-W-PF2S50VK.cisco.com:9092
+kafka-console-consumer.sh --topic srird --from-beginning --bootstrap-server 127.0.0.1:9092
 
 
 
@@ -61,5 +61,15 @@ kafka-console-consumer.sh --topic srird --from-beginning --bootstrap-server CSCO
 https://kafka.apache.org/quickstart
 
 
+
+
+1) Prodcuer
+2) Consumer
+3) Broker
+4) Cluster
+5) Topic
+6) Partitions
+6) Offset
+7) Consumer Group
 
 

@@ -16,4 +16,9 @@ public class KafkaConsumer {
 		LOGGER.info(String.format("Subscribing the message :%s", message));
 	}
 	
+	@KafkaListener(topics = "manjupas", groupId = "myGroup")
+	public void consume2(String message) {
+		LOGGER.info(String.format("Subscribing the message2 :%s", message));
+	}
+	
 }

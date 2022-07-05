@@ -19,5 +19,10 @@ public class KafkaConfig {
 		return TopicBuilder.name("srird_json").build();
 		
 	}
+	
+	@Bean
+	public NewTopic TesingJsonTopics() {
+		return TopicBuilder.name("manjupas").build();
+	}
 
 }
